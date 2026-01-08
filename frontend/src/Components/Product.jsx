@@ -10,7 +10,7 @@ const Product = ({ addToCart }) => {
   }, []);
 
   const getData = async () => {
-    const responce = await axios.get("http://localhost:4000/product");
+    const responce = await axios.get("https://jantabookshop.onrender.com/product");
     setProduct(responce.data.data);
     
     console.log(responce.data.message)

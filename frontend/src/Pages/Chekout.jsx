@@ -45,13 +45,10 @@ const navigate = useNavigate()
       
        
     }
-
-    console.log("Order Data:", formData);
-    alert("Order Placed Successfully ✅");
     localStorage.removeItem("cart")
     navigate('/')
   };
-  console.log(formData)
+  
   return (
     <div className='py-18'>
                <div className="min-h-screen  bg-gray-100  p-2 md:p-2">

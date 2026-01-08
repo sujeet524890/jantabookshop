@@ -9,11 +9,11 @@ const Users = () => {
     getData();
   }, []);
   const getData = async () => {
-    const responce = await axios.get("http://localhost:4000/user");
+    const responce = await axios.get("https://jantabookshop.onrender.com/user");
     setUser(responce.data.user);
    
   };
-  console.log(user);
+  
 
   return (
     <div>

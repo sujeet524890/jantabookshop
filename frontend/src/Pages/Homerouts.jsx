@@ -9,6 +9,7 @@ function Homerouts({addToCart}) {
     <div>
       <Mainbanner></Mainbanner>
        <Bestseller></Bestseller>
+       
         <Product addToCart={addToCart}></Product>
       
     </div>

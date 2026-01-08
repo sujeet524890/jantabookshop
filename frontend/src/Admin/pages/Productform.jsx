@@ -55,7 +55,7 @@ const From = () => {
   const hendalsubmit = async (e) => {
     e.preventDefault();
     try{
-    const responce = await axios.post("http://localhost:4000/addproduct", {
+    const responce = await axios.post("https://jantabookshop.onrender.com/addproduct", {
       image,
       price,
       rating,

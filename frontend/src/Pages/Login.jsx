@@ -32,23 +32,22 @@ const Login = () => {
   // login endpoint
   const handlelogin = async () => {
     try {
-      const response = await axios.post("http://localhost:4000/login", {
+      const response = await axios.post("https://jantabookshop.onrender.com/login", {
         email,
         password,
       });
-      console.log(response.data.message);
-      console.log(response.data.token)
+      
        localStorage.setItem('usertoken',response.data.token)
        if(response.data.success){
         location('/') 
        }
         toast.success("login successful")
-      alert(response.data.message);
+      
       if(response){
       setEmail("")
       setPassword("")}
     } catch {
-      console.log("error")
+     
     }
   };
 
@@ -60,16 +59,13 @@ const Login = () => {
       const response = await axios.post("http://localhost:4000/signup", {
         username, email, password
       });
-      console.log(response.data.message);
+      
        toast.success("Signup successful")
-      // alert(response.data.message);
-      console.log(response.data.token);
         localStorage.setItem('sinuptoken',response.data.token)
       if(response.data.success){
         location('/') 
        }
     } catch {
-      console.log("server error");
       
     }
   };

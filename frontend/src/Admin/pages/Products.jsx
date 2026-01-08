@@ -15,14 +15,13 @@ const Products = () => {
   },[])
 
   const getData = async()=>{
-    const responce = await axios.get("http://localhost:4000/product")
+    const responce = await axios.get("https://jantabookshop.onrender.com/product")
      setProduct(responce.data.data)
-      
-     console.log(responce.data.data)
+    
    
      
   }
-// console.log(product)
+
 
   return (
     <div>
@@ -32,7 +31,7 @@ const Products = () => {
               <button className="bg-blue-600 text-white px-4 py-2 rounded"
                onClick={()=>
                 location('/Productform')
-                  // console.log("hh")
+                  
               }>
                 Add Product
               </button></div>
