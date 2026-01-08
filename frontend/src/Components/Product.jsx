@@ -13,11 +13,9 @@ const Product = ({ addToCart }) => {
     const responce = await axios.get("https://jantabookshop.onrender.com/product");
     setProduct(responce.data.data);
     
-    console.log(responce.data.message)
-    
-    
+   
   };
-  console.log("addToCart:", addToCart);
+  
   return (
     <div>
       <section className="max-w-7xl mx-auto px-4 py-10">

@@ -17,17 +17,17 @@ const Login = () => {
   const handleEmail = (e) => {
     setEmail(e.target.value);
   };
-  console.log(email);
+  
 
   const handlePassword = (e) => {
     setPassword(e.target.value);
   };
-  console.log(password);
+  
 
   const handleUsername = (e) => {
     setUsername(e.target.value);
   };
-  console.log(username);
+  
 
   // login endpoint
   const handlelogin = async () => {

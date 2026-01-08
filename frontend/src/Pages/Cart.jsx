@@ -27,7 +27,7 @@ const Cart = ({
             ) : (
               cartItems.map((item) => (
                 <div
-                  key={item.id}
+                  key={item._id}
                   className="flex items-center gap-4 border p-4 rounded-lg"
                 >
                   <img

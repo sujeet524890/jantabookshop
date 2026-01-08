@@ -10,7 +10,7 @@ const navigate = useNavigate()
     // cartItems: [],
     // totalPrice: 0,
   };
-  console.log(totalPrice)
+  
   const shiping = 50
   const TotalPrice = totalPrice + shiping
 
